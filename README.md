@@ -1,4 +1,2 @@
-vim
-===
+After cloning, symlink ~/.vimrc to .vim/vimrc
 
-.vim .vimrc
