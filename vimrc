@@ -40,5 +40,12 @@ autocmd BufRead *.as set filetype=actionscript
 :highlight RedundantSpaces ctermbg=white guibg=white
 :match RedundantSpaces /\s\+$\| \+\ze\t/
 
+"NO MORE MIDDLE CLICK PASTE!!!
+:map <MiddleMouse> <Nop>
+:imap <MiddleMouse> <Nop>
+
 "ctrlp options
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.test_preprocessed/*,.production_preprocessed/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(test_preprocessed|production_preprocessed)$',
+  \ }
