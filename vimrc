@@ -27,6 +27,7 @@ set smarttab
 set ignorecase
 set hlsearch
 set ruler
+set nofoldenable
 
 set showmode
 
