@@ -28,6 +28,7 @@ set ignorecase
 set hlsearch
 set ruler
 set nofoldenable
+set mouse=a
 
 set showmode
 
